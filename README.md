@@ -31,7 +31,7 @@ df = pd.DataFrame(iris_datas.data, columns=['SpealLength', 'Spealwidth', 'PetalL
 df.head(1)
 ```
 
-![image-20201011195328287](https://github.com/pangjinfeng/twodogstools/blob/main/image/iris_datas.png)
+![iris](https://github.com/pangjinfeng/twodogstools/blob/main/image/iris_datas.png)
 
 样例数据使用常用的数据集iris, 目前主要为三大模块函数：
 
@@ -53,7 +53,7 @@ df.head(1)
 pjftools().value_count(data=df, col_key='SpealLength', col_value='Spealwidth')
 ```
 
-![image-20201011200226520](C:\Users\10568\AppData\Roaming\Typora\typora-user-images\image-20201011200226520.png)
+![value_counts](https://github.com/pangjinfeng/twodogstools/blob/main/image/value_counts.png)
 
 #### 2、extract_address
 
@@ -72,13 +72,13 @@ location_str = ['徐汇区虹漕路461号58号楼5楼', '泉州市洛江区万�
 pjftools.extract_address(location_str)
 ```
 
-![image-20201011202551226](C:\Users\10568\AppData\Roaming\Typora\typora-user-images\image-20201011202551226.png)
+![address_1](https://github.com/pangjinfeng/twodogstools/blob/main/image/address_1.png)
 
 ```python
 extract_address(pd.DataFrame(location_str, columns=['address']), column='address')
 ```
 
-![image-20201011211557972](C:\Users\10568\AppData\Roaming\Typora\typora-user-images\image-20201011211557972.png)
+![address_2](https://github.com/pangjinfeng/twodogstools/blob/main/image/address_2.png)
 
 #### 3、mergeplus
 
@@ -97,25 +97,25 @@ merge、join都只支持两个DataFrame连接，而append与concat都只是纯�
 df1.head(1)
 ```
 
-![image-20201011223151424](C:\Users\10568\AppData\Roaming\Typora\typora-user-images\image-20201011223151424.png)
+![mergeplus_1](https://github.com/pangjinfeng/twodogstools/blob/main/image/mergeplus_1.png)
 
 ```python
 df2.head(2)
 ```
 
-![image-20201011223203576](C:\Users\10568\AppData\Roaming\Typora\typora-user-images\image-20201011223203576.png)
+![mergeplus_2](https://github.com/pangjinfeng/twodogstools/blob/main/image/mergeplus_2.png)
 
 ```python
 df3.head(1)
 ```
 
-![image-20201011223218836](C:\Users\10568\AppData\Roaming\Typora\typora-user-images\image-20201011223218836.png)
+![mergeplus_3](https://github.com/pangjinfeng/twodogstools/blob/main/image/mergeplus_3.png)
 
 ```python
 pjftools.mergeplus([df1, df2, df3], left_on='id', right_on='id')
 ```
 
-![image-20201011223328255](C:\Users\10568\AppData\Roaming\Typora\typora-user-images\image-20201011223328255.png)
+![mergeplus_4](https://github.com/pangjinfeng/twodogstools/blob/main/image/mergeplus_4.png)
 
 #### 4、add_split
 
@@ -130,19 +130,19 @@ pjftools.mergeplus([df1, df2, df3], left_on='id', right_on='id')
 df.head(2)
 ```
 
-![image-20201012215840817](C:\Users\10568\AppData\Roaming\Typora\typora-user-images\image-20201012215840817.png)
+![add_split_1](https://github.com/pangjinfeng/twodogstools/blob/main/image/add_split_1.png)
 
 ```python
 pjftools.add_split(df, column='content', sep=',', axis=1)
 ```
 
-![image-20201012222021581](C:\Users\10568\AppData\Roaming\Typora\typora-user-images\image-20201012222021581.png)
+![add_split_2](https://github.com/pangjinfeng/twodogstools/blob/main/image/add_split_2.png)
 
 ```python
 pjftools.add_split(df, column='content', sep=',', axis=0)
 ```
 
-![image-20201012222152010](C:\Users\10568\AppData\Roaming\Typora\typora-user-images\image-20201012222152010.png)
+![add_split_3](https://github.com/pangjinfeng/twodogstools/blob/main/image/add_split_3.png)
 
 #### 5、textrank
 

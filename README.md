@@ -173,7 +173,7 @@ pjftools.textrank(sentence=text, withWeight=True,, topK=3)
 pjftools.connectfile(filedir='./testfilepath/', save='./newfile')
 ```
 
-![image-20201013144443375](C:\Users\10568\AppData\Roaming\Typora\typora-user-images\image-20201013144443375.png)
+![connetfile](https://github.com/pangjinfeng/twodogstools/blob/main/image/connetfile.png)
 
 #### 7、filedir_to_df
 
@@ -188,9 +188,9 @@ pjftools.connectfile(filedir='./testfilepath/', save='./newfile')
 pjftools.filedir_to_df('./testfilepath/', filetype='xlsx')
 ```
 
-![image-20201013150509280](C:\Users\10568\AppData\Roaming\Typora\typora-user-images\image-20201013150509280.png)
+![filedir_to_df_1](https://github.com/pangjinfeng/twodogstools/blob/main/image/filedir_to_df_1.png)
 
-![image-20201013150347922](C:\Users\10568\AppData\Roaming\Typora\typora-user-images\image-20201013150347922.png)
+![filedir_to_df_2](https://github.com/pangjinfeng/twodogstools/blob/main/image/filedir_to_df_2.png)
 
 #### 8、transip
 
@@ -205,7 +205,7 @@ pjftools.transip('3072792065',transtype='intip')
 pjftools.transip(3072792065)
 ```
 
-![image-20201015150138797](C:\Users\10568\AppData\Roaming\Typora\typora-user-images\image-20201015150138797.png)
+![transip](https://github.com/pangjinfeng/twodogstools/blob/main/image/transip.png)
 
 
 

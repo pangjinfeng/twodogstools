@@ -207,6 +207,19 @@ pjftools.transip(3072792065)
 
 ![transip](https://github.com/pangjinfeng/twodogstools/blob/main/image/transip.png)
 
+#### 9、ip2address
+
+通过API接口ip查询地址，并区分是否为境外
+
+- ip: str，需要查询的ip
+- api: str，默认为纯真库api='http://ipaddr.cz88.net/data.php?ip='
+
+```python
+pjftools.ip2address('58.217.112.26')
+```
+
+{'ip': '58.217.112.26', 'address': '江苏省镇江市',  'operators': '电信', 'abroad': False}
+
 
 
 

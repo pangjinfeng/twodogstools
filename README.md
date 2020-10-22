@@ -31,7 +31,7 @@ df = pd.DataFrame(iris_datas.data, columns=['SpealLength', 'Spealwidth', 'PetalL
 df.head(1)
 ```
 
-![image-20201011195328287](C:\Users\10568\AppData\Roaming\Typora\typora-user-images\image-20201011195328287.png)
+![image-20201011195328287](https://github.com/pangjinfeng/twodogstools/blob/main/image/iris_datas.png)
 
 样例数据使用常用的数据集iris, 目前主要为三大模块函数：
 

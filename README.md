@@ -220,6 +220,38 @@ pjftools.ip2address('58.217.112.26')
 
 {'ip': '58.217.112.26', 'address': '江苏省镇江市',  'operators': '电信', 'abroad': False}
 
+#### 10、phone2message
+
+基于公共手机号，短信验证码接收，短信存在他人登录状况，仅做测试交流使用，严禁非法调用，未经本人许可，不得转载与使用
+
+```python
+# 加载数据,只保留1小时以内的数据
+pm = phone2message()
+```
+
+********    禁止非法使用,此工具仅为测试交流使用   ********
+
+```python
+# 查看可用手机号活跃状况
+pm.phoneinfo.head(n=2) # 更换 n 的数值可以获取到更多的可用手机号，已按照活跃降序
+```
+
+![phone2message_1.png](https://github.com/pangjinfeng/twodogstools/blob/main/image/phone2message_1.png)
+
+```python
+# 提取短信信息
+phone = 17085464353  # 选择上述的其中一个手机号，用来获取短信
+message = pm.extract_message(phone=phone)
+message
+```
+
+![phone2message_2.png](https://github.com/pangjinfeng/twodogstools/blob/main/image/phone2message_2.png)
+
+```python
+message.img[0]  # 如果验证码为转换成功，则存为图片形式 [n] n为索引，即第几行，0开始计数
+```
+验证码地址为：
+http://8.210.115.9/img.php?num=OTU1ODQw&x=MzM2NzkxMjI5NzI=&s=39196045440
 
 
 
